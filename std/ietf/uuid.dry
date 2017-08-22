@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type uuid)
+
+(see specification: <https://tools.ietf.org/html/rfc4122>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/Universally_unique_identifier>))

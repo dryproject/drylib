@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type iri)
+
+(see specification: <https://tools.ietf.org/html/rfc3987>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier>))

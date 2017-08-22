@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type uri)
+
+(see specification: <https://tools.ietf.org/html/rfc3986>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>))

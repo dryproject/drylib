@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type url)
+
+(see specification: <https://url.spec.whatwg.org/>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/URL>))
