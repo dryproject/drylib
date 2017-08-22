@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type thread)
+
+(see specification: <http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap03.html#tag_03_394>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/POSIX_Threads>))

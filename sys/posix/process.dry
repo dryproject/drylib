@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type process)
+
+(see specification: <http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap03.html#tag_03_289>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/Process_(computing)>))

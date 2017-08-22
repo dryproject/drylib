@@ -1,0 +1,7 @@
+; This is free and unencumbered software released into the public domain.
+
+(type signal
+      (enum))
+
+(see specification: <http://man7.org/linux/man-pages/man7/signal.7.html>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/Signal_(IPC)>))
