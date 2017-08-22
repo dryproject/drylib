@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type instant)
+
+(see specification: <>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/Instant>))
