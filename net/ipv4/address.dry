@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type address)
+
+(see specification: <https://tools.ietf.org/html/rfc791>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/IPv4>))
