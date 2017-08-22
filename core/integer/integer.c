@@ -1,12 +1,13 @@
 /* This is free and unencumbered software released into the public domain. */
 
-// Package dry provides the DRYlib core implementation for Go.
-package dry
+#if __STDC_VERSION__ < 201112L
+#error "DRYlib for C requires a C11 compiler (CFLAGS='-std=c11')"
+#endif
 
 ////////////////////////////////////////////////////////////////////////////////
-// Constants
 
-// Version contains the current package version, as a string.
-const Version = "0.0.0"
+typedef struct {
+  // TODO
+} dry_integer_t;
 
 ////////////////////////////////////////////////////////////////////////////////
