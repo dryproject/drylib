@@ -4,8 +4,8 @@
 #error "DRYlib for C++ requires a C++ compiler"
 #endif
 
-#if __cplusplus < 201103L
-#error "DRYlib for C++ requires a C++11 compiler (CXXFLAGS='-std=c++11')"
+#if __cplusplus < 201402L
+#error "DRYlib for C++ requires a C++14 compiler (CXXFLAGS='-std=c++14')"
 #endif
 
 #include <cstdint> /* for std::*int_t */
@@ -90,7 +90,7 @@ struct dry::complex {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-// c++ -std=c++11 -DMAIN prelude.cpp
+// c++ -std=c++14 -DMAIN prelude.cpp
 #ifdef MAIN
 int main(int argc, char* argv[]) {
   return 0;
