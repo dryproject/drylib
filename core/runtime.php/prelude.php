@@ -9,6 +9,10 @@ if (version_compare(phpversion(), '7.0', '<')) {
   die("DRYlib for PHP requires PHP 7.0+\n");
 }
 
+if (PHP_INT_SIZE < 8) {
+  die("DRYlib for PHP requires a 64-bit PHP runtime (CFLAGS='-m64').\n");
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 
 class limits {
