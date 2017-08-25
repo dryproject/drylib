@@ -11,88 +11,128 @@ if (version_compare(phpversion(), '7.0', '<')) {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-function bool($value): bool {
-  return boolval($value);
+class limits {
+  const int8_min   = -0x80;
+  const int8_max   =  0x7f;
+  const int16_min  = -0x8000;
+  const int16_max  =  0x7fff;
+  const int32_min  = -0x80000000;
+  const int32_max  =  0x7fffffff;
+  const int64_min  = -0x8000000000000000;
+  const int64_max  =  0x7fffffffffffffff;
+  const int128_min = '-0x80000000000000000000000000000000';
+  const int128_max =  '0x7fffffffffffffffffffffffffffffff';
 }
 
-function char(int $value): int {
-  return intval($value);
+////////////////////////////////////////////////////////////////////////////////
+
+class UnderflowException extends \ArithmeticError {}
+
+class OverflowException extends \ArithmeticError {}
+
+////////////////////////////////////////////////////////////////////////////////
+
+function bool($x): bool {
+  return boolval($x);
+}
+
+function char(int $c): int {
+  // TODO: check bounds.
+  return intval($c);
 }
 
 function complex(Real $real, Real $imaginary): Complex {
   return new Complex($real, $imaginary);
 }
 
-function float(float $value): float {
-  return floatval($value);
+function float(float $r): float {
+  return $r;
 }
 
-function float32(float $value): float {
-  return floatval($value);
+function float32(float $r): float {
+  // TODO: check bounds.
+  return $r;
 }
 
-function float64(float $value): float {
-  return floatval($value);
+function float64(float $r): float {
+  return $r;
 }
 
-function int(int $value): int {
-  return intval($value);
+function int(int $z): int {
+  return $z;
 }
 
-function int8(int $value): int {
-  return intval($value);
+function int8(int $z): int {
+  if ($z < limits::int8_min) throw new UnderflowException();
+  if ($z > limits::int8_max) throw new OverflowException();
+  return $z;
 }
 
-function int16(int $value): int {
-  return intval($value);
+function int16(int $z): int {
+  if ($z < limits::int16_min) throw new UnderflowException();
+  if ($z > limits::int16_max) throw new OverflowException();
+  return $z;
 }
 
-function int32(int $value): int {
-  return intval($value);
+function int32(int $z): int {
+  if ($z < limits::int32_min) throw new UnderflowException();
+  if ($z > limits::int32_max) throw new OverflowException();
+  return $z;
 }
 
-function int64(int $value): int {
-  return intval($value);
+function int64(int $z): int {
+  if ($z < limits::int64_min) throw new UnderflowException();
+  if ($z > limits::int64_max) throw new OverflowException();
+  return $z;
 }
 
-function int128(int $value): int {
-  return intval($value);
+function int128($x): int {
+  return intval($x); // TODO
 }
 
-function integer(int $value): Integer {
-  return new Integer($value);
+function integer(int $z): Integer {
+  return new Integer($z);
 }
 
-function natural(int $value): Integer {
-  return integer($value);
+function natural(int $n): Integer {
+  if ($z < 0) throw new UnderflowException();
+  return integer($n);
 }
 
 function rational(Integer $numerator, Integer $denominator): Rational {
   return new Rational($numerator, $denominator);
 }
 
-function real(float $value): Real {
-  return new Real($value);
+function real(float $r): Real {
+  return new Real($r);
 }
 
-function word(int $value): int {
-  return intval($value);
+function word(int $n): int {
+  return word64($n);
 }
 
-function word8(int $value): int {
-  return intval($value);
+function word8(int $n): int {
+  if ($n < 0) throw new UnderflowException();
+  if ($n > 0xff) throw new OverflowException();
+  return $n;
 }
 
-function word16(int $value): int {
-  return intval($value);
+function word16(int $n): int {
+  if ($n < 0) throw new UnderflowException();
+  if ($n > 0xffff) throw new OverflowException();
+  return $n;
 }
 
-function word32(int $value): int {
-  return intval($value);
+function word32(int $n): int {
+  if ($n < 0) throw new UnderflowException();
+  if ($n > 0xffffffff) throw new OverflowException();
+  return $n;
 }
 
-function word64(int $value): int {
-  return intval($value);
+function word64(int $n): int {
+  if ($n < 0) throw new UnderflowException();
+  if ($n > 0xffffffffffffffff) throw new OverflowException(); // FIXME?
+  return $n;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
