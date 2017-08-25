@@ -1,0 +1,5 @@
+; This is free and unencumbered software released into the public domain.
+
+(type float float64)
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/IEEE_754>))

@@ -1,0 +1,5 @@
+; This is free and unencumbered software released into the public domain.
+
+(type word64 (word bits: 64))
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Word_(computer_architecture)>))

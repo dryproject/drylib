@@ -1,0 +1,5 @@
+; This is free and unencumbered software released into the public domain.
+
+(type natural (integer min: 0))
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Natural_number>))

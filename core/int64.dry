@@ -1,0 +1,5 @@
+; This is free and unencumbered software released into the public domain.
+
+(type int64 (integer bits: 64 min: -9223372036854775808 max: 9223372036854775807))
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Integer_(computer_science)>))

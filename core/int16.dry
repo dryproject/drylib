@@ -1,0 +1,5 @@
+; This is free and unencumbered software released into the public domain.
+
+(type int16 (integer bits: 16 min: -32768 max: 32767))
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Integer_(computer_science)>))

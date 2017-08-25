@@ -1,0 +1,5 @@
+; This is free and unencumbered software released into the public domain.
+
+(type complex (struct real: real imaginary: real))
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Complex_data_type>))
