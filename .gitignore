@@ -6,3 +6,7 @@
 
 # rst2html
 README.html
+
+# Distributables
+drylib-*.tar
+drylib-*.tar.xz

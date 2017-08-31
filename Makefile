@@ -1,14 +1,16 @@
+TAR = tar
+
 PACKAGE := drylib
 VERSION := $(shell cat VERSION)
 
-SOURCES := $(wildcard */*.dry */*/*.dry */*/*/*.dry)
+SOURCES := $(wildcard */.drypackage */*/.drypackage */*/*/.drypackage */*.dry */*/*.dry */*/*/*.dry)
 
 OUTPUTS := $(PACKAGE)-$(VERSION).tar.xz
 
 all: build
 
-$(PACKAGE)-$(VERSION).tar.xz:
-	@echo "not implemented" # TODO
+$(PACKAGE)-$(VERSION).tar.xz: $(SOURCES)
+	$(TAR) -cvJf $@ $^
 
 build: $(OUTPUTS)
 
