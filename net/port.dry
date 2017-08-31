@@ -1,0 +1,6 @@
+; This is free and unencumbered software released into the public domain.
+
+(type port (integer min: 0 max: 65535))
+
+(see specification: <https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml>
+     wikipedia: (en: <https://en.wikipedia.org/wiki/Port_(computer_networking)>))

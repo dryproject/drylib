@@ -35,6 +35,11 @@ Data Types
 
 * ``location``: GPS location (latitude, longitude, altitude).
 
+``net``
+-------
+
+* ``port``: Port number (for TCP, UDP, etc).
+
 ``net/ipv4``
 ------------
 
