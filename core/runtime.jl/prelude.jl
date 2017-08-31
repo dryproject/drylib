@@ -1,5 +1,7 @@
 # This is free and unencumbered software released into the public domain.
 
+module DRY
+
 ################################################################################
 # Type Definitions
 
@@ -68,5 +70,9 @@ const Word64 = Core.UInt64
 
 # Machine word (128-bit)
 const Word128 = Core.UInt128
+
+################################################################################
+
+end # module DRY
 
 #println("OK") # julia prelude.jl
