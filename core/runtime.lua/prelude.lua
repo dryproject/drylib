@@ -32,6 +32,18 @@ local limits = {
 --------------------------------------------------------------------------------
 -- Helper Functions
 
+local _assert = assert
+
+function assert(cond, message, value)
+  if cond then return cond
+  else
+    if type(message) == "function" then
+      message = message(value)
+    end
+    return error(message, 2)
+  end
+end
+
 function isnumber(x)
   return type(x) == "number"
 end
@@ -55,9 +67,9 @@ end
 --------------------------------------------------------------------------------
 -- Error Handlers
 
-local type_error      = "type mismatch"
-local underflow_error = "numeric underflow"
-local overflow_error  = "numeric overflow"
+local type_error      = function(x) return string.format("type mismatch: %q", x) end
+local underflow_error = function(x) return string.format("numeric underflow: %q", x) end
+local overflow_error  = function(x) return string.format("numeric overflow: %q", x) end
 
 --------------------------------------------------------------------------------
 -- Type Constructors
@@ -70,8 +82,8 @@ end
 -- Character (21-bit Unicode code point)
 function dry.char(c)
   if isnumber(c) then
-    assert(c >= limits.char.min, underflow_error)
-    assert(c <= limits.char.max, overflow_error)
+    assert(c >= limits.char.min, underflow_error, c)
+    assert(c <= limits.char.max, overflow_error, c)
     return c
   else
     return error("not implemented") -- TODO
@@ -92,13 +104,13 @@ end
 
 -- Floating-point number (32-bit single-precision)
 function dry.float32(r)
-  assert(isnumber(r), type_error)
+  assert(isnumber(r), type_error, r)
   return tofloat(r)
 end
 
 -- Floating-point number (64-bit double-precision)
 function dry.float64(r)
-  assert(isnumber(r), type_error)
+  assert(isnumber(r), type_error, r)
   return tofloat(r)
 end
 
@@ -109,33 +121,33 @@ end
 
 -- Integer number (8-bit)
 function dry.int8(z)
-  assert(isnumber(z), type_error)
-  assert(z >= limits.int8.min, underflow_error)
-  assert(z <= limits.int8.max, overflow_error)
+  assert(isnumber(z), type_error, z)
+  assert(z >= limits.int8.min, underflow_error, z)
+  assert(z <= limits.int8.max, overflow_error, z)
   return z
 end
 
 -- Integer number (16-bit)
 function dry.int16(z)
-  assert(isnumber(z), type_error)
-  assert(z >= limits.int16.min, underflow_error)
-  assert(z <= limits.int16.max, overflow_error)
+  assert(isnumber(z), type_error, z)
+  assert(z >= limits.int16.min, underflow_error, z)
+  assert(z <= limits.int16.max, overflow_error, z)
   return z
 end
 
 -- Integer number (32-bit)
 function dry.int32(z)
-  assert(isnumber(z), type_error)
-  assert(z >= limits.int32.min, underflow_error)
-  assert(z <= limits.int32.max, overflow_error)
+  assert(isnumber(z), type_error, z)
+  assert(z >= limits.int32.min, underflow_error, z)
+  assert(z <= limits.int32.max, overflow_error, z)
   return z
 end
 
 -- Integer number (64-bit)
 function dry.int64(z)
-  assert(isnumber(z), type_error)
-  assert(z >= limits.int64.min, underflow_error)
-  assert(z <= limits.int64.max, overflow_error)
+  assert(isnumber(z), type_error, z)
+  assert(z >= limits.int64.min, underflow_error, z)
+  assert(z <= limits.int64.max, overflow_error, z)
   return z
 end
 
@@ -151,7 +163,7 @@ end
 
 -- Natural number (arbitrary size)
 function dry.natural(n)
-  assert(n >= 0, "natural numbers cannot be negative")
+  assert(n >= 0, "natural numbers cannot be negative: %q", n)
   return dry.integer(n)
 end
 
@@ -164,7 +176,7 @@ end
 
 -- Real number (arbitrary size)
 function dry.real(r)
-  assert(isnumber(r), type_error)
+  assert(isnumber(r), type_error, r)
   return dry.float64(r) -- FIXME
 end
 
@@ -175,33 +187,33 @@ end
 
 -- Machine word (8-bit)
 function dry.word8(n)
-  assert(isnumber(n), type_error)
-  assert(n >= 0, underflow_error)
-  assert(n <= limits.word8.max, overflow_error)
+  assert(isnumber(n), type_error, n)
+  assert(n >= 0, underflow_error, n)
+  assert(n <= limits.word8.max, overflow_error, n)
   return math.floor(n)
 end
 
 -- Machine word (16-bit)
 function dry.word16(n)
-  assert(isnumber(n), type_error)
-  assert(n >= 0, underflow_error)
-  assert(n <= limits.word16.max, overflow_error)
+  assert(isnumber(n), type_error, n)
+  assert(n >= 0, underflow_error, n)
+  assert(n <= limits.word16.max, overflow_error, n)
   return math.floor(n)
 end
 
 -- Machine word (32-bit)
 function dry.word32(n)
-  assert(isnumber(n), type_error)
-  assert(n >= 0, underflow_error)
-  assert(n <= limits.word32.max, overflow_error)
+  assert(isnumber(n), type_error, n)
+  assert(n >= 0, underflow_error, n)
+  assert(n <= limits.word32.max, overflow_error, n)
   return math.floor(n)
 end
 
 -- Machine word (64-bit)
 function dry.word64(n)
-  assert(isnumber(n), type_error)
-  assert(n >= 0, underflow_error)
-  --assert(n <= limits.word64.max, overflow_error) -- always succeeds in Lua 5.3
+  assert(isnumber(n), type_error, n)
+  assert(n >= 0, underflow_error, n)
+  --assert(n <= limits.word64.max, overflow_error, n) -- always succeeds in Lua 5.3
   return math.floor(n)
 end
 
