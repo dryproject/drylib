@@ -2,11 +2,41 @@
 DRYlib
 ******
 
+Languages
+=========
+
+C
+-
+
+C++
+---
+
+Common Lisp
+-----------
+
+Go
+--
+
+Julia
+-----
+
+Lua
+---
+
+PHP
+---
+
+Rust
+----
+
+Reference
+=========
+
 Data Types
-==========
+----------
 
 ``core``
---------
+^^^^^^^^
 
 * ``bool``:     Boolean (``true`` or ``false``).
 * ``char``:     Character (21-bit Unicode code point).
@@ -31,27 +61,27 @@ Data Types
 * ``word64``:   Machine word (64-bit).
 
 ``geo``
--------
+^^^^^^^
 
 * ``location``: GPS location (latitude, longitude, altitude).
 
 ``net``
--------
+^^^^^^^
 
 * ``port``: Port number (for TCP, UDP, etc).
 
 ``net/ipv4``
-------------
+^^^^^^^^^^^^
 
 * ``address``: IPv4 address.
 
 ``net/ipv6``
-------------
+^^^^^^^^^^^^
 
 * ``address``: IPv6 address.
 
 ``std/ietf``
-------------
+^^^^^^^^^^^^
 
 * ``iri``: Internationalized Resource Identifier (IRI).
 * ``uri``: Uniform Resource Identifier (URI).
@@ -60,17 +90,17 @@ Data Types
 * ``uuid``: Universally Unique Identifier (UUID).
 
 ``std/itu``
------------
+^^^^^^^^^^^
 
 * ``oid``: Object Identifier (OID).
 
 ``std/w3c``
------------
+^^^^^^^^^^^
 
 * ``curie``: Compact URI (CURIE).
 
 ``time``
---------
+^^^^^^^^
 
 * ``duration``: Time duration.
 * ``instant``: Time instant.
