@@ -5,82 +5,29 @@ DRYlib
 Languages
 =========
 
-=========== ====================================================================
-Language    Typing
-=========== ====================================================================
-C           static
-C++         static
-Common Lisp dynamic
-Go          static
-Julia       dynamic
-Kotlin      static
-Lua         dynamic
-PHP         dynamic
-Rust        static
-=========== ====================================================================
+=============== ======== =======================================================
+Language        Typing   Usage
+=============== ======== =======================================================
+`C`_            static   ``#include "drylib.h"``
+`C++`_          static   ``#include "drylib.hpp"``
+`Common Lisp`_  dynamic  ``(require :dry)``
+`Go`_           static   ``import "github.com/dryproject/drylib.go"``
+`Julia`_        dynamic  ``using DRY``
+`Kotlin`_       static   ``import dry.*``
+`Lua`_          dynamic  ``require 'drylib'``
+`PHP`_          dynamic  ``require_once 'drylib.php';``
+`Rust`_         static   ``extern crate drylib as dry;``
+=============== ======== =======================================================
 
-C
--
-
-::
-
-   #include "drylib.c"
-
-C++
----
-
-::
-
-   #include "drylib.cpp"
-
-Common Lisp
------------
-
-::
-
-   (require :dry)
-
-Go
---
-
-::
-
-   import "github.com/dryproject/drylib.go"
-
-Julia
------
-
-::
-
-   using DRY
-
-Kotlin
-------
-
-::
-
-   import dry.*
-
-Lua
----
-
-::
-
-   require 'drylib'
-
-PHP
----
-
-::
-
-   require_once 'drylib.php';
-
-Rust
-----
-
-::
-
-   extern crate drylib as dry;
+.. _C:           https://github.com/dryproject/drylib.c
+.. _C++:         https://github.com/dryproject/drylib.cpp
+.. _Common Lisp: https://github.com/dryproject/drylib.lisp
+.. _Go:          https://github.com/dryproject/drylib.go
+.. _Julia:       https://github.com/dryproject/drylib.jl
+.. _Kotlin:      https://github.com/dryproject/drylib.kt
+.. _Lua:         https://github.com/dryproject/drylib.lua
+.. _PHP:         https://github.com/dryproject/drylib.php
+.. _Rust:        https://github.com/dryproject/drylib.rs
 
 Reference
 =========
