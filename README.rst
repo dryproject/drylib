@@ -8,26 +8,65 @@ Languages
 C
 -
 
+::
+
+   #include "drylib.c"
+
 C++
 ---
+
+::
+
+   #include "drylib.cpp"
 
 Common Lisp
 -----------
 
+::
+
+   (require :dry)
+
 Go
 --
+
+::
+
+   import "github.com/dryproject/drylib.go"
 
 Julia
 -----
 
+::
+
+   using DRY
+
+Kotlin
+------
+
+::
+
+   import dry.*
+
 Lua
 ---
+
+::
+
+   require 'drylib'
 
 PHP
 ---
 
+::
+
+   require_once 'drylib.php';
+
 Rust
 ----
+
+::
+
+   extern crate drylib as dry;
 
 Reference
 =========
