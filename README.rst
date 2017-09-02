@@ -5,6 +5,20 @@ DRYlib
 Languages
 =========
 
+=========== ====================================================================
+Language    Typing
+=========== ====================================================================
+C           static
+C++         static
+Common Lisp dynamic
+Go          static
+Julia       dynamic
+Kotlin      static
+Lua         dynamic
+PHP         dynamic
+Rust        static
+=========== ====================================================================
+
 C
 -
 
