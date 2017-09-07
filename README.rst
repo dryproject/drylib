@@ -2,6 +2,8 @@
 DRYlib
 ******
 
+*The polyglot programmer's standard library.*
+
 Languages
 =========
 
