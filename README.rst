@@ -2,6 +2,16 @@
 DRYlib
 ******
 
+.. image:: https://img.shields.io/badge/license-Public%20Domain-blue.svg
+   :alt: Project license
+   :target: https://unlicense.org/
+
+.. image:: https://img.shields.io/travis/dryproject/drylib/master.svg
+   :alt: Travis CI build status
+   :target: https://travis-ci.org/dryproject/drylib
+
+|
+
 *The polyglot programmer's standard library.*
 
 Languages
@@ -14,9 +24,9 @@ Language        Typing   Usage
 `C++`_          static   ``#include "drylib.hpp"``
 `Common Lisp`_  dynamic  ``(require :dry)``
 `Go`_           static   ``import "github.com/dryproject/drylib.go"``
-`Julia`_        dynamic  ``using DRY``
+`Julia`_        dynamic  ``using DRYlib``
 `Kotlin`_       static   ``import dry.*``
-`Lua`_          dynamic  ``require 'drylib'``
+`Lua`_          dynamic  ``dry = require 'drylib'``
 `PHP`_          dynamic  ``require_once 'drylib.php';``
 `Rust`_         static   ``extern crate drylib as dry;``
 =============== ======== =======================================================
