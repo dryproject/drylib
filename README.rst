@@ -72,6 +72,9 @@ Data Types
 * ``word32``:   Machine word (32-bit).
 * ``word64``:   Machine word (64-bit).
 
+Reference (experimental)
+========================
+
 ``geo``
 ^^^^^^^
 
