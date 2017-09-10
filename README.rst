@@ -75,6 +75,9 @@ Data Types
 Reference (experimental)
 ========================
 
+Data Types
+----------
+
 ``geo``
 ^^^^^^^
 
