@@ -22,7 +22,7 @@ Language        Typing   Usage
 =============== ======== =======================================================
 `C`_            static   ``#include "drylib.h"``
 `C++`_          static   ``#include "drylib.hpp"``
-`Common Lisp`_  dynamic  ``(require :dry)``
+`Common Lisp`_  dynamic  ``(require :drylib)``
 `Go`_           static   ``import "github.com/dryproject/drylib.go"``
 `Julia`_        dynamic  ``using DRYlib``
 `Kotlin`_       static   ``import dry.*``
@@ -40,6 +40,24 @@ Language        Typing   Usage
 .. _Lua:         https://github.com/dryproject/drylib.lua
 .. _PHP:         https://github.com/dryproject/drylib.php
 .. _Rust:        https://github.com/dryproject/drylib.rs
+
+Rationale
+=========
+
+* Reduces the cognitive load of frequently switching between different
+  programming languages.
+* Enables network effects to cross different languages.
+* Facilitates code generation for multiple target languages.
+
+Features
+========
+
+Installation
+============
+
+To use DRYlib in your favorite programming language(s), refer to the table
+at the top that links to the specific code repositories for the set of
+currently supported target languages.
 
 Reference
 =========
