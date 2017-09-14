@@ -4,8 +4,8 @@
 # Editor backup files
 *~
 
-# rst2html
-README.html
+# rst2html outputs
+*.html
 
 # Distributables
 drylib-*.tar
