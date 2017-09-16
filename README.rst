@@ -28,6 +28,7 @@ Language        Typing   Usage
 `Kotlin`_       static   ``import dry.*``
 `Lua`_          dynamic  ``dry = require 'drylib'``
 `PHP`_          dynamic  ``require_once 'drylib.php';``
+`Ruby`_         dynamic  ``require 'drylib'``
 `Rust`_         static   ``extern crate drylib as dry;``
 =============== ======== =======================================================
 
@@ -39,6 +40,7 @@ Language        Typing   Usage
 .. _Kotlin:      https://github.com/dryproject/drylib.kt
 .. _Lua:         https://github.com/dryproject/drylib.lua
 .. _PHP:         https://github.com/dryproject/drylib.php
+.. _Ruby:        https://github.com/dryproject/drylib.rb
 .. _Rust:        https://github.com/dryproject/drylib.rs
 
 Rationale
