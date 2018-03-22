@@ -23,11 +23,13 @@ Language        Typing   Usage
 `C`_            static   ``#include "drylib.h"``
 `C++`_          static   ``#include "drylib.hpp"``
 `Common Lisp`_  dynamic  ``(require :drylib)``
+`Dart`_         static   -
 `Go`_           static   ``import "github.com/dryproject/drylib.go"``
 `Julia`_        dynamic  ``using DRYlib``
 `Kotlin`_       static   ``import dry.*``
 `Lua`_          dynamic  ``dry = require 'drylib'``
 `PHP`_          dynamic  ``require_once 'drylib.php';``
+`Python`_       dynamic  ``import drylib``
 `Ruby`_         dynamic  ``require 'drylib'``
 `Rust`_         static   ``extern crate drylib as dry;``
 =============== ======== =======================================================
@@ -35,11 +37,13 @@ Language        Typing   Usage
 .. _C:           https://github.com/dryproject/drylib.c
 .. _C++:         https://github.com/dryproject/drylib.cpp
 .. _Common Lisp: https://github.com/dryproject/drylib.lisp
+.. _Dart:        https://github.com/dryproject/drylib.dart
 .. _Go:          https://github.com/dryproject/drylib.go
 .. _Julia:       https://github.com/dryproject/drylib.jl
 .. _Kotlin:      https://github.com/dryproject/drylib.kt
 .. _Lua:         https://github.com/dryproject/drylib.lua
 .. _PHP:         https://github.com/dryproject/drylib.php
+.. _Python:      https://github.com/dryproject/drylib.py
 .. _Ruby:        https://github.com/dryproject/drylib.rb
 .. _Rust:        https://github.com/dryproject/drylib.rs
 
