@@ -23,11 +23,13 @@ Language        Typing   Usage
 `C`_            static   ``#include "drylib.h"``
 `C++`_          static   ``#include "drylib.hpp"``
 `Common Lisp`_  dynamic  ``(require :drylib)``
-`Dart`_         static   -
+`D`_            static   ``import dry = drylib;``
+`Dart`_         static   
 `Go`_           static   ``import "github.com/dryproject/drylib.go"``
 `Julia`_        dynamic  ``using DRYlib``
 `Kotlin`_       static   ``import dry.*``
 `Lua`_          dynamic  ``dry = require 'drylib'``
+`OCaml`_        static   
 `PHP`_          dynamic  ``require_once 'drylib.php';``
 `Python`_       dynamic  ``import drylib``
 `Ruby`_         dynamic  ``require 'drylib'``
@@ -37,11 +39,13 @@ Language        Typing   Usage
 .. _C:           https://github.com/dryproject/drylib.c
 .. _C++:         https://github.com/dryproject/drylib.cpp
 .. _Common Lisp: https://github.com/dryproject/drylib.lisp
+.. _D:           https://github.com/dryproject/drylib.d
 .. _Dart:        https://github.com/dryproject/drylib.dart
 .. _Go:          https://github.com/dryproject/drylib.go
 .. _Julia:       https://github.com/dryproject/drylib.jl
 .. _Kotlin:      https://github.com/dryproject/drylib.kt
 .. _Lua:         https://github.com/dryproject/drylib.lua
+.. _OCaml:       https://github.com/dryproject/drylib.ocaml
 .. _PHP:         https://github.com/dryproject/drylib.php
 .. _Python:      https://github.com/dryproject/drylib.py
 .. _Ruby:        https://github.com/dryproject/drylib.rb
@@ -52,7 +56,9 @@ Rationale
 
 * Reduces the cognitive load of frequently switching between different
   programming languages.
+
 * Enables network effects to cross different languages.
+
 * Facilitates code generation for multiple target languages.
 
 Features
