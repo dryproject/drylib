@@ -25,7 +25,10 @@ Language        Typing   Usage
 `Common Lisp`_  dynamic  ``(require :drylib)``
 `D`_            static   ``import dry = drylib;``
 `Dart`_         static   
+`Elixir`_       dynamic  
 `Go`_           static   ``import "github.com/dryproject/drylib.go"``
+`Java`_         static   
+`JS`_           dynamic  
 `Julia`_        dynamic  ``using DRYlib``
 `Kotlin`_       static   ``import dry.*``
 `Lua`_          dynamic  ``dry = require 'drylib'``
@@ -41,7 +44,10 @@ Language        Typing   Usage
 .. _Common Lisp: https://github.com/dryproject/drylib.lisp
 .. _D:           https://github.com/dryproject/drylib.d
 .. _Dart:        https://github.com/dryproject/drylib.dart
+.. _Elixir:      https://github.com/dryproject/drylib.ex
 .. _Go:          https://github.com/dryproject/drylib.go
+.. _Java:        https://github.com/dryproject/drylib.java
+.. _JS:          https://github.com/dryproject/drylib.js
 .. _Julia:       https://github.com/dryproject/drylib.jl
 .. _Kotlin:      https://github.com/dryproject/drylib.kt
 .. _Lua:         https://github.com/dryproject/drylib.lua
