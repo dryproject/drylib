@@ -1,9 +1,9 @@
 ; This is free and unencumbered software released into the public domain.
 
-(type symbol primitive)
+(type vector primitive)
 
-(see wikipedia: (en: <https://en.wikipedia.org/wiki/Identifier#In_computer_languages>))
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)>))
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-A symbol.
+A vector (a 1D tensor).
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

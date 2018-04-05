@@ -1,9 +1,9 @@
 ; This is free and unencumbered software released into the public domain.
 
-(type symbol primitive)
+(type matrix primitive)
 
-(see wikipedia: (en: <https://en.wikipedia.org/wiki/Identifier#In_computer_languages>))
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Matrix_(mathematics)>))
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-A symbol.
+A matrix (a 2D tensor).
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
