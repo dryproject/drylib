@@ -1,0 +1,9 @@
+; This is free and unencumbered software released into the public domain.
+
+(type unit abstract)
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Units_of_measurement>))
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+A unit of measurement.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

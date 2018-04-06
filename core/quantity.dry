@@ -1,0 +1,9 @@
+; This is free and unencumbered software released into the public domain.
+
+(type quantity abstract)
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Quantity>))
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+A quantity.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
