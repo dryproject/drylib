@@ -1,0 +1,7 @@
+; This is free and unencumbered software released into the public domain.
+
+(type (or i32 i64 f32 f64))
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+WebAssembly value.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
