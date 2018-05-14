@@ -1,0 +1,7 @@
+; This is free and unencumbered software released into the public domain.
+
+(type (enum none some))
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+An optional value.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
