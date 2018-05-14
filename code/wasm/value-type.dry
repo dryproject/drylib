@@ -2,6 +2,8 @@
 
 (type (or 'i32 'i64 'f32 'f64))
 
+(see <https://webassembly.github.io/spec/core/syntax/types.html#value-types>)
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 WebAssembly value type.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
