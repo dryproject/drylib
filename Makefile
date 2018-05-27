@@ -1,10 +1,10 @@
-PANDOC = pandoc
-TAR = tar
+PANDOC  ?= pandoc
+TAR     ?= tar
 
 PACKAGE := drylib
 VERSION := $(shell cat VERSION)
 
-SOURCES := $(wildcard */.drypackage */*/.drypackage */*/*/.drypackage */*.dry */*/*.dry */*/*/*.dry)
+SOURCES := $(wildcard .drypackage */.drymodule */*/.drymodule */*/*/.drymodule */*.dry */*/*.dry */*/*/*.dry)
 
 TARGETS := $(PACKAGE)-$(VERSION).tar.xz
 
