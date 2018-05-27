@@ -83,7 +83,7 @@ Reference
 Data Types
 ----------
 
-``core``
+``base``
 ^^^^^^^^
 
 * ``bool``:     Boolean (``true`` or ``false``).
