@@ -4,7 +4,7 @@ DRYlib
 
 .. image:: https://img.shields.io/badge/license-Public%20Domain-blue.svg
    :alt: Project license
-   :target: https://unlicense.org/
+   :target: https://unlicense.org
 
 .. image:: https://img.shields.io/travis/dryproject/drylib/master.svg
    :alt: Travis CI build status
@@ -13,6 +13,16 @@ DRYlib
 |
 
 *The polyglot programmer's standard library.*
+
+Caveats
+=======
+
+*This is a semi-public, pre-alpha, work-in-progress project.*
+
+**Here be dragons.**
+
+**Caveat utilitor:** assume nothing works, and you may be pleasantly
+surprised; and when it breaks, you get to keep both pieces.
 
 Languages
 =========
