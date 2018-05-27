@@ -27,12 +27,12 @@ Language        Typing   Usage
 `Dart`_         static   
 `Elixir`_       dynamic  
 `Go`_           static   ``import "github.com/dryproject/drylib.go"``
-`Java`_         static   
-`JS`_           dynamic  
+`Java`_         static   ``import dry.*;``
+`JS`_           dynamic  ``import * as dry from 'drylib';``
 `Julia`_        dynamic  ``using DRYlib``
 `Kotlin`_       static   ``import dry.*``
 `Lua`_          dynamic  ``dry = require 'drylib'``
-`OCaml`_        static   
+`OCaml`_        static   ``open DRY``
 `PHP`_          dynamic  ``require_once 'drylib.php';``
 `Python`_       dynamic  ``import drylib``
 `Ruby`_         dynamic  ``require 'drylib'``
