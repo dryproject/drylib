@@ -1,9 +1,9 @@
 ; This is free and unencumbered software released into the public domain.
 
-(type word32 (word bits: 32))
+(word bits: 32)
 
 (see wikipedia: (en: <https://en.wikipedia.org/wiki/Word_(computer_architecture)>))
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-TODO
+Machine word (32-bit).
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
