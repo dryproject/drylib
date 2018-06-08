@@ -1,5 +1,5 @@
 ; This is free and unencumbered software released into the public domain.
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Foreign-function interfaces (FFIs).
+FFI for the Vulkan cross-platform graphics & compute API (``libvulkan``).
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

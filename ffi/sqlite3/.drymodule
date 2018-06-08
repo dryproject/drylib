@@ -1,5 +1,5 @@
 ; This is free and unencumbered software released into the public domain.
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Foreign-function interfaces (FFIs).
+FFI for the SQLite 3.x embedded database library (``libsqlite3``).
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
