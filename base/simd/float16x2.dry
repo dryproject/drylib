@@ -1,0 +1,5 @@
+; This is free and unencumbered software released into the public domain.
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+32-bit vector with two ``float16`` lanes.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
