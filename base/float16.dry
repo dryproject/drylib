@@ -1,0 +1,9 @@
+; This is free and unencumbered software released into the public domain.
+
+(type float16 primitive)
+
+(see wikipedia: (en: <https://en.wikipedia.org/wiki/Half-precision_floating-point_format>))
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Floating-point number (16-bit half-precision).
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
