@@ -1,9 +1,5 @@
 ; This is free and unencumbered software released into the public domain.
 
-(type float32 primitive)
-
-(see wikipedia: (en: <https://en.wikipedia.org/wiki/IEEE_754-1985#Single_precision>))
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Floating-point number (32-bit single precision).
+Floating-point number (128-bit quadruple precision).
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
